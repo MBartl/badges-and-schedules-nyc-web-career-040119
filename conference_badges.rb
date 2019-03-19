@@ -27,7 +27,7 @@ def printer(attendees)
   print_single = assign_rooms(attendees)
   number = 0
   print_single.each do
-    print_single[number]
+    puts print_single[number]
     number += 1
   end
 end
