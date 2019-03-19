@@ -5,8 +5,22 @@ end
 def batch_badge_creator(attendees)
   batch_messages = []
   attendees.each do |name|
-    batch_messages.push("Hello, my name is #{name}.")
+    batch_messages.push(badge_maker(name))
   end
   return batch_messages
 end
 
+def assign_rooms(attendees)
+  room_messages = []
+  room = 1
+  attendees.each do |name|
+    room_messages.push("Hello #{name}! You'll be assigned to room #{room}!")
+    room += 1
+  end
+end
+
+def conference_badges(name, room)
+  puts "#{name}, #{room}"
+end
+    
+  
