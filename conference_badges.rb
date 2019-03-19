@@ -24,9 +24,5 @@ def printer(attendees)
   attendees.each do |name|
     puts badge_maker(name)
   end
-  number = 0
-  while number < attendees.length do
-    puts assign_rooms.room_messages[number]
-    number += 1
-  end
+
 end
