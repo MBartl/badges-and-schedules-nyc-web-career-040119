@@ -28,4 +28,5 @@ def printer(attendees)
   while number < attendees.length do
     puts assign_rooms.room_messages[number]
     number += 1
+  end
 end
