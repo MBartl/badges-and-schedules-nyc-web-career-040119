@@ -21,7 +21,10 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  puts "#{name}, #{room}"
+  room = 1
+  attendees.each do |name|
+    puts "#{name}, #{room}"
+    room += 1
+  end
 end
-    
   
