@@ -17,9 +17,10 @@ def assign_rooms(attendees)
     room_messages.push("Hello #{name}! You'll be assigned to room #{room}!")
     room += 1
   end
+  return room_messages
 end
 
-def conference_badges(name, room)
+def printer(name, room)
   puts "#{name}, #{room}"
 end
     
