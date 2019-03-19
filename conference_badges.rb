@@ -24,5 +24,10 @@ def printer(attendees)
   attendees.each do |name|
     puts badge_maker(name)
   end
-
+  print_single = assign_rooms(attendees)
+  number = 0
+  print_single.each do
+    print_single[number]
+    number += 1
+  end
 end
